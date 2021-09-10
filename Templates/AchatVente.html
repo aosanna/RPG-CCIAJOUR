@@ -1,0 +1,42 @@
+<body style="background-image: url('src/img/boutique.png');background-repeat: no-repeat; background-size: cover">
+    <div id="interfboutique">
+        <div id="interfvente">
+            <h3 id="titremarchand">
+                <div>Marchand</div>
+                <img src="src/img/bourse.png" id="iconeav">
+            </h3>
+            <div id="sizeintervente">
+                <?php foreach ($items as $item) : ?>
+                    <div id="interfventeinter">
+                        <div><img src="src/img/epe2.png" id="imgarme"></div>
+                        <div><?= $item["objet"] ?></div>
+                        <div><?= $item["pa"] ?></div>
+                        <div><a href="achat/<?= $item['id_objet'] ?>"><button>Acheter</button></a></div>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        </div>
+        <div id="interfvente">
+            <h3 id="titremarchand">
+                <div> Inventaire</div>
+                <img src="src/img/sac.png" id="iconeav">
+                <a href="boutique"><img src="src/img/croix.png" alt="" id="iconeav"></a>
+            </h3>
+            <div id="sizeintervente">
+                <?php if ($invent) : ?>
+                    <?php foreach ($invent as $inventaire) : ?>
+                        <div id="interfventeinter">
+                            <div><?= $inventaire["image"] ?></div>
+                            <div><?= $inventaire["objet"] ?></div>
+                            <div><?= $inventaire["pa"] / 2 ?></div>
+                            <div><a href="vente/<?= $inventaire['id_inv'] ?>"><button>Vendre</button></a></div>
+                        </div>
+                    <?php endforeach ?>
+                    <div id="interfventeintergold">Gold : <?= $invent[0]["po"] ?><img src="src/img/or.png" id="iconeav"></div>
+                <?php else : ?>
+                    <div id="interfventeinter"></div>
+                    <div id="interfventeintergold">Gold : <?= $gold[0]["po"] ?><img src="src/img/or.png" id="iconeav"></div>
+                <?php endif ?>
+            </div>
+        </div>
+    </div>

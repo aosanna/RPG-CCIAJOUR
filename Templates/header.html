@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>RPG</title>
+
+
+</head>
+<header>
+    <?php if (!isset($_SESSION)) : ?>
+        <div><a href="connection" class="aheader">Connection</a></div>
+    <?php else : ?>
+        <div><a href="moncompte" class="aheader"><?= $_SESSION["User"] ?></a></div>
+    <?php endif ?>
+    <h1>RPG-CCI</h1>
+    <?php if (!isset($_SESSION)) : ?>
+        <div><a href="inscription" class="aheader">Inscription</a></div>
+    <?php else : ?>
+        <div class="divdeco"><a href="deconnection" class="aheader">Deconnection</a></div>
+    <?php endif ?>
+
+</header>

@@ -1,0 +1,24 @@
+<body style="background-image: url('src/img/fondbase.jpg');background-repeat: no-repeat; background-size: cover">
+<div class="posform">
+    <div class="formbase">
+        <h1>Inscription</h1>
+        <div>
+            <form action="inscription" method="post">
+                <p><label for="pseudo">Pseudo : <input type="text" name="pseudo" id="pseudo"></label></p>
+                <p><label for="mdp">Mot de passe : <input type="password" name="mdp" id="mdp"></label></p>
+                <p><label for="vmdp">Vérification Mot de passe : <input type="password" name="vmdp" id="vmdp"></label></p>
+                <p><input type="submit" value="Validez votre inscription"></p>
+            </form>
+        </div>
+    
+    <?php
+    if (isset($errors)) {
+        echo "<ul>";
+        foreach ($errors as $error) {
+            echo "<li>$error</li>";
+        }
+        echo "</ul>";
+    }
+    ?>
+    </div>
+    </div>

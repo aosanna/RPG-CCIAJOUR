@@ -1,0 +1,18 @@
+<body style="background-image: url('src/img/fondbase.jpg');background-repeat: no-repeat; background-size: cover">
+
+    <div id="affmoncompte">
+        <h1 id="titremoncompte">Mon Compte</h1>
+        <p id="textelisteperso">Liste de personnage:</p>
+        <div id="divperso">
+            <?php foreach ($listeperso as $liste) : ?>
+                <div>
+                    <div><img src="src/img/elfeguerrier.png" alt="" id="imgperso"></div>
+                    <div>Personnage: <?= $liste["nom"] . ' ' ?></div>
+                    <div>Level: <?= $liste["niveau"] ?></div>
+                    <a href="recupId/<?= $liste['id_perso']?>"><input type="submit" value="Jouer !"></a>
+                </div>
+            <?php endforeach ?>
+        </div>
+
+       <div id="creaperso"><a href="FormNewPerso" class="aheader">New Personnage<a></div> 
+    </div>

@@ -1,0 +1,292 @@
+
+/*-------------------header----------------------*/
+
+header{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+}
+h1{
+    font-family: Brush Script MT, Brush Script Std, cursive;   
+}
+.aheader{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------- body général--------------------*/
+
+body{
+    margin: 0%;
+    size: 100vh;
+}
+
+/*------------- formulaire général--------------------*/
+
+.formbase{
+    color: white;
+    background-color: rgb(54,54,47);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50vh;
+    margin-top: 20vh;
+}
+.posform{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*------------------ Mon compte------------------------*/
+
+#divperso{
+    display: flex;
+    justify-content: space-around;
+}
+#affmoncompte{
+    color: white;
+    background-color: rgb(54,54,47);
+    margin-top: 10vh;
+}
+#titremoncompte{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+}
+#imgperso{
+    width: 200px;
+}
+#creaperso{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+#textelisteperso{
+    margin: 30px;
+    font-size: 30px;
+
+}
+
+/*--------Création de nouveaux personnage------------*/
+
+#formcreaperso{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.interformcreaperso{
+    margin: 10px;
+    font-size: 30px;
+}
+#subcreapers{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.optcreaperso{
+    font-size: 20px;
+}
+
+/*-----------------maps générale -------------------*/
+
+#imgfleche{
+    width: 150px;
+}
+
+/*---------------page de la ville------------*/
+
+#ville{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    height: 89vh;
+}
+#iconeboutique{
+    width: 20vh;
+    margin-top: 10vh;
+    padding: 22vh;
+    margin-right: 60vh;
+}
+#pville{
+    color: white;
+    font-size: 20px;
+    margin-bottom: -2vh;
+}
+
+/*---------------page de la plaine------------*/
+
+#plaine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 89vh;
+}
+#imgflecheht{
+    width: 150px;
+    transform: rotate(180deg);
+    margin-bottom: -5vh;
+}
+#imgflechep{
+    width: 150px;
+    margin-bottom: 5vh;
+}
+
+/*---------------page de la foret------------*/
+
+#foret{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 89vh;
+}
+
+/*---------------page de la boutique------------*/
+
+#marchant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    height: 89vh;
+}
+#imgmarchant{
+    margin-top: 10vh;
+    padding: 10vh;
+    height: 40vh;
+}
+#pboutique{
+    color: white;
+    font-size: 20px;
+    margin-bottom: -2vh;
+}
+
+/*--------------page achat vente----------------*/
+
+#titremarchand{
+    display: flex;
+    color: white;
+    background-color: rgb(54,54,47);
+    border:1px solid grey;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 0; 
+}
+#titreinv{
+    display: flex;
+    color: white;
+    background-color: rgb(54,54,47);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 0;
+    padding-right: 100px;
+}
+#interfboutique{
+    display: flex; 
+    justify-content:space-around;
+    margin-top: 2%;
+}
+#interfvente{
+    display: flex; 
+    flex-direction:column; 
+    width: 500px;
+}
+#interfventeinter{
+    display: flex; 
+    background-color: rgb(54,54,47); 
+    text-align: center;
+    align-items: center;
+    color:white; 
+    justify-content:space-around;
+    border:1px solid grey;
+    padding: 1%;
+}
+#sizeintervente{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+#interfventeintergold{
+    display: flex; 
+    background-color: rgb(54,54,47); 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:white; 
+    border:1px solid grey;
+    padding: 1%;
+}
+#imgarme{
+    width: 50px;
+}
+#iconeav{
+    width: 50px;
+}
+
+/*---------------popup------------------------*/
+
+.barre{ 
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: rgb(54,54,47);
+        border: 1px solid grey;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.titreinvit{
+    margin-left: 10px;
+}
+.ferm{ 
+    width: 15px;
+    margin-right: 10px;
+}
+.inventaire{    
+                border: 1px solid grey;
+                background-color: rgb(54,54,47);
+                color: white;
+                width: 700px;
+                height: 450px;
+                font-size: 15px;
+                position: absolute;
+                right: 25%;
+                top: 20%;
+}
+
+/*---------------footer-----------------------*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.iconefooter{
+    width: 50px;
+    border: gray 2px solid;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+
+
+

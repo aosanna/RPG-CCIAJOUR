@@ -1,0 +1,36 @@
+<body style="background-image: url('src/img/fondbase.jpg');background-repeat: no-repeat; background-size: cover">
+    <div id="affmoncompte">
+        <h1 id="titremoncompte">Creation d'un nouveau personnage !</h1>
+        <form action="NewPerso" method="POST" id="formcreaperso">
+            <div class="interformcreaperso">
+                <label for="Nom">Pseudo : </label>
+                <input type="text" name="Nom" id="Nom">
+            </div>
+            <div class="interformcreaperso">
+                <label for="Sexe">Sexe:</label>
+                <select name="Sexe" id="FormSexe">
+                    <option value="Masculin" class="optcreaperso">Masculin</option>
+                    <option value="Feminin" class="optcreaperso">Feminin</option>
+                </select>
+            </div>
+            <div class="interformcreaperso">
+                <label for="Race">Race:</label>
+                <select name="Race" id="FormRace">
+                    <option value="Humain" class="optcreaperso">Humain</option>
+                    <option value="Orc" class="optcreaperso">Orc</option>
+                    <option value="Elfe" class="optcreaperso">Elfe</option>
+                </select>
+            </div>
+            <div class="interformcreaperso">
+                <label for="Classe">Classe:</label>
+                <select name="Class" id="FormClass">
+                    <option value="Guerrier" class="optcreaperso">Guerrier</option>
+                    <option value="Archer" class="optcreaperso">Archer</option>
+                    <option value="Mage" class="optcreaperso">Mage</option>
+                </select>
+            </div>
+            <div class="interformcreaperso">
+                <input type="submit" value="Créer" id="subcreapers">
+            </div>
+        </form>
+    </div>
